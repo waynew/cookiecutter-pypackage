@@ -1,11 +1,11 @@
 {
-	"full_name": "Audrey Roy",
-	"email": "audreyr@gmail.com",
-	"github_username": "audreyr",
-	"project_name": "Python Boilerplate",
-	"repo_name": "boilerplate",
-	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-	"release_date": "2013-08-11",
-	"year": "2013",
+	"full_name": "Wayne Werner",
+	"email": "waynejwerner@gmail.com",
+	"github_username": "waynew",
+	"project_name": "Draft in a Flask",
+	"repo_name": "draftin-a-flask",
+	"project_short_description": "A simple Flask server that allows you to publish Pelican blags from http://draftin.com",
+	"release_date": "2014-01-13",
+	"year": "2014",
 	"version": "0.1.0"
 }
