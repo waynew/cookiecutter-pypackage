@@ -2,9 +2,9 @@
 	"full_name": "Wayne Werner",
 	"email": "waynejwerner@gmail.com",
 	"github_username": "waynew",
-	"project_name": "Draft in a Flask",
-	"repo_name": "draftin-a-flask",
-	"project_short_description": "A simple Flask server that allows you to publish Pelican blags from http://draftin.com",
+	"project_name": "Super Cool Project",
+	"repo_name": "super_cool_project",
+	"project_short_description": "A project of super coolness",
 	"release_date": "2014-01-13",
 	"year": "2014",
 	"version": "0.1.0"
