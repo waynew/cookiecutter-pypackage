@@ -7,8 +7,22 @@ import sys
 
 try:
     from setuptools import setup
+    from setuptools.command.test import test as TestCommand
 except ImportError:
     from distutils.core import setup
+    
+    
+class Tox(TestCommand):
+    def finalize_options(self):
+        TestCommand.finalize_options(self)
+        self.test_args = []
+        self.test_suite = True
+    def run_tests(self):
+        #import here, cause outside the eggs aren't loaded
+        import tox
+        errcode = tox.cmdline(self.test_args)
+        sys.exit(errcode)
+        
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
@@ -46,5 +60,7 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
     ],
+    tests_require=['tox'],
+    cmdclass={'test': Tox},
     test_suite='tests',
 )
