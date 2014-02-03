@@ -1,4 +1,10 @@
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+#vim
+*.swp
+*.swo
 
 # C extensions
 *.so
